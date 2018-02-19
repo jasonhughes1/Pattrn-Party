@@ -8,3 +8,9 @@ $('.tab').on('click', function() {
     let activeCard = `#card-${$(this).attr('id')}`;
     $(activeCard).addClass('active-card');
 });
+
+$('.menu-link').on('click', function() {
+  $('.header-container').toggleClass('drop-down');
+  $('.navlink').toggleClass('hide-p')
+  $('.search').toggleClass('hide-search')
+})
